@@ -4,7 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kour.io on GitHub Pages</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+        h1 {
+            color: #333;
+        }
+        iframe {
+            width: 100%;
+            height: 80vh;
+            border: none;
+            background-color: #fff;
+        }
+        .fallback {
+            display: none;
+            color: #ff0000;
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            iframe {
+                height: 60vh;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
