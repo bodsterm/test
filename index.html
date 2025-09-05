@@ -1,28 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kour.io Fullscreen</title>
-    <style>
-        /* Remove default margins and padding, make body fill the screen */
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden; /* Prevent scrollbars */
-        }
-        /* Style the iframe to take up full screen */
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none; /* Remove iframe border */
-        }
-    </style>
+    <title>Kour.io Bypass</title>
 </head>
 <body>
-    <!-- Embed kour.io in a full-screen iframe -->
-    <iframe src="https://kour.io" title="Kour.io Game" allowfullscreen></iframe>
+    <h1>Kour.io Loader</h1>
+    <iframe src="https://now.gg/play/kour-io/1234/kour-io" width="100%" height="600px" frameborder="0"></iframe>
+    <script>
+        console.log("Bypassing Lightspeed Filter Agent...");
+        const bypassScript = document.createElement('script');
+        bypassScript.src = 'https://greasyfork.org/scripts/440267/bypass-lightspeed-filter.user.js';
+        bypassScript.onload = () => {
+            console.log("Lightspeed Filter Bypassed! Kour.io loaded.");
+        };
+        document.body.appendChild(bypassScript);
+    </script>
 </body>
 </html>
